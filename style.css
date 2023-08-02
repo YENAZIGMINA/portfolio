@@ -1947,8 +1947,8 @@ a {text-decoration: none; color: #333;}
 }
 
 .ballet .reponsive_wrap .responsive {top: -18rem;}
-.ballet .reponsive_wrap .responsive .respon_tab {opacity: 0;}
-.ballet .reponsive_wrap .responsive .respon_ph {opacity: 0;}
+.ballet .reponsive_wrap .responsive .respon_tab {opacity: 0; pointer-events: none;}
+.ballet .reponsive_wrap .responsive .respon_ph {opacity: 0; pointer-events: none;}
 
 
 /* shshi */
@@ -2231,8 +2231,8 @@ a {text-decoration: none; color: #333;}
   opacity: 1;
 }
 
-.hanacard .reponsive_wrap .respon_tab {opacity: 0;}
-.hanacard .reponsive_wrap .respon_ph {opacity: 0;}
+.hanacard .reponsive_wrap .respon_tab {opacity: 0; pointer-events: none;}
+.hanacard .reponsive_wrap .respon_ph {opacity: 0; pointer-events: none;}
 
 
 /* bootstrap */
@@ -2276,7 +2276,7 @@ a {text-decoration: none; color: #333;}
   background-position: bottom;
 }
 
-.bootstrap .reponsive_wrap .respon_ph {opacity: 0;}
+.bootstrap .reponsive_wrap .respon_ph {opacity: 0; pointer-events: none;}
 
 
 /* php */
@@ -2302,8 +2302,8 @@ a {text-decoration: none; color: #333;}
   opacity: 1;
 }
 
-.php .reponsive_wrap .respon_tab {opacity: 0;}
-.php .reponsive_wrap .respon_ph {opacity: 0;}
+.php .reponsive_wrap .respon_tab {opacity: 0; pointer-events: none;}
+.php .reponsive_wrap .respon_ph {opacity: 0; pointer-events: none;}
 
 
 /* react */
@@ -2329,8 +2329,8 @@ a {text-decoration: none; color: #333;}
   opacity: 1;
 }
 
-.react .reponsive_wrap .respon_tab {opacity: 0;}
-.react .reponsive_wrap .respon_ph {opacity: 0;}
+.react .reponsive_wrap .respon_tab {opacity: 0; pointer-events: none;}
+.react .reponsive_wrap .respon_ph {opacity: 0; pointer-events: none;}
 
 
 
