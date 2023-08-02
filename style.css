@@ -1833,14 +1833,14 @@ a {text-decoration: none; color: #333;}
 
 .history_cider .circle{
   position: absolute;
-  width: 370px; height: 370px;
+  width: 370px; height: 350px;
   left: 66%; top: 19%;
 }
 .history_cider .circle span{
   position: absolute;
   width: 100%; height: 100%;
-  background-color: var(--text-sub-color);
-  border-radius: 50%;
+  background-color: #0000008c;
+  border-radius: 50px;
 }
 .history_cider .click_web {
   position: absolute;
@@ -1945,7 +1945,10 @@ a {text-decoration: none; color: #333;}
   transform: translateZ(50px)  scale(1);
   opacity: 1;
 }
-.ballet .reponsive_wrap {top: 11.5rem; right: -4.5rem;}
+
+.ballet .reponsive_wrap .responsive {top: -18rem;}
+.ballet .reponsive_wrap .responsive .respon_tab {opacity: 0;}
+.ballet .reponsive_wrap .responsive .respon_ph {opacity: 0;}
 
 
 /* shshi */
@@ -2014,7 +2017,6 @@ a {text-decoration: none; color: #333;}
   transform: translateZ(50px)  scale(1);
   opacity: 1;
 }
-.bSlide.shshi .reponsive_wrap {top: 11rem;}
 
 
 /* 뮤자인 */
@@ -2083,7 +2085,6 @@ a {text-decoration: none; color: #333;}
   transform: translateZ(50px)  scale(1);
   opacity: 1;
 }
-.bSlide.musign .reponsive_wrap {top: 11rem;}
 
 
 /* 메가박스 */
@@ -2145,8 +2146,6 @@ a {text-decoration: none; color: #333;}
   background-position: bottom;
 }
 
-.bSlide.megabox .reponsive_wrap {top: 10.5rem;}
-
 
 /* webstandard */
 .bSlide.webstandard .moniter_wrap {
@@ -2207,7 +2206,6 @@ a {text-decoration: none; color: #333;}
   background-position: bottom;
 }
 
-.bSlide.webstandard .reponsive_wrap {top: 10.5rem;}
 
 
 /* hanacard */
@@ -2233,8 +2231,8 @@ a {text-decoration: none; color: #333;}
   opacity: 1;
 }
 
-.bSlide.hanacard .reponsive_wrap {top: 10.5rem;}
-.hanacard .reponsive_wrap {right: -4.5rem;}
+.hanacard .reponsive_wrap .respon_tab {opacity: 0;}
+.hanacard .reponsive_wrap .respon_ph {opacity: 0;}
 
 
 /* bootstrap */
@@ -2278,7 +2276,7 @@ a {text-decoration: none; color: #333;}
   background-position: bottom;
 }
 
-.bootstrap .reponsive_wrap { top: 10.5rem; right: -9rem;}
+.bootstrap .reponsive_wrap .respon_ph {opacity: 0;}
 
 
 /* php */
@@ -2304,7 +2302,8 @@ a {text-decoration: none; color: #333;}
   opacity: 1;
 }
 
-.php .reponsive_wrap {top: 10rem; right: -4.5rem;}
+.php .reponsive_wrap .respon_tab {opacity: 0;}
+.php .reponsive_wrap .respon_ph {opacity: 0;}
 
 
 /* react */
@@ -2330,7 +2329,8 @@ a {text-decoration: none; color: #333;}
   opacity: 1;
 }
 
-.react .reponsive_wrap {top: 8.5rem; right: -4.5rem;}
+.react .reponsive_wrap .respon_tab {opacity: 0;}
+.react .reponsive_wrap .respon_ph {opacity: 0;}
 
 
 
@@ -2389,8 +2389,15 @@ a {text-decoration: none; color: #333;}
   transition-duration: 0.3s;
   opacity: 1;
 }
+.cider_bottle .bottle .tool::before {
+  content: '';
+  position: absolute;
+  top: -1rem; left: -0.5rem;
+  width: 79%;
+  border: 1.5px solid var(--bg-sub-color);
+}
 .cider_bottle .bottle .tool span {
-  color: #000;
+  color: var(--bg-sub-color);
   font-family: var(--main-text);
   font-weight: bold;
   font-size: 37px;
@@ -2416,49 +2423,64 @@ a {text-decoration: none; color: #333;}
   font-size: 18px;
 }
 
+
+/* --------------------------------------------------------- */
 .reponsive_wrap {
-  position: absolute;
-  top: 12rem; right: -13.5rem;
+  position: relative;
 }
-.cider_bottle .bottle .responsive {
+.reponsive_wrap .responsive {
   display: flex;
-  margin-top: 20px;
+  position: absolute;
+  top: -19rem; right: -15rem;
 }
 .cider_bottle .bottle .responsive div {
-  width: 60px; height: 30px;
+  width: 68px; height: 34px;
   background-color: var(--main-color);
   border-radius: 30px;
   margin-right: 10px;
   text-align: center;
   padding-top: 3px;
+  transition: 0.3s;
+}
+.cider_bottle .bottle .responsive div:hover {
+  background-color: #511f68;
 }
 .cider_bottle .bottle .responsive div a {
   color: #fff;
   font-family: var(--main-text);
   font-size: 14px;
+  transition: 0.3s ease-in-out;
 }
-.cider_bottle .bottle .responsive div:hover a {color: var(--text-sub-color);}
+.cider_bottle .bottle .responsive div:hover a {
+  color: var(--text-sub-color);
+  font-size: 15px;
+}
 
-
-.cider_bottle .bSlide .bottle .tag_desc {
+.web .progress {
+  position: relative;
+}
+.web .progress .progress_btn {
   position: absolute;
-  top: 10rem; right: -6rem;
-  transform: scale(0);
-  transition-duration: 0.5s;
-  opacity: 1;
+  top: -15rem; right: -15rem;
+  width: 235px; height: 53px;
+  background-color: var(--main-color);
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 15px;
+  transition: 0.3s;
 }
-.cider_bottle .bSlide.slick-active .bottle .tag_desc{
-  transform: scale(1);
-  transition-duration: 0.5s;
-  opacity: 1;
+.web .progress .progress_btn:hover {
+  background-color: #511f68;
 }
-.cider_bottle .bSlide .bottle .tag_desc p {
-  font-family: var(--script-text);
-  color: var(--main-color);
-  text-align: start;
-  transform: translate(-79%, 38%);
-  line-height: 1.3;
-  font-size: 19.5px;
+.web .progress .progress_btn a {
+  color: #fff;
+  font-family: var(--main-text);
+  font-size: 17px;
+  transition: 0.3s;
+}
+.web .progress .progress_btn:hover a{
+  color: var(--text-sub-color);
+  font-size: 19px;
 }
 
 
