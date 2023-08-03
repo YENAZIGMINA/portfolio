@@ -1957,6 +1957,7 @@
 
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-scrolla@0.0.3/dist/js/jquery.scrolla.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -1978,7 +1979,12 @@
 
 
 <script>
-    
+    const scroll = new Scrooth({
+    element: window,
+    strength: 10,
+    acceleration: 1.5,
+    deceleration: 0.975,
+  });
 </script>
 
 
