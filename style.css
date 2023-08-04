@@ -22,10 +22,7 @@
   margin: 0; padding: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-  cursor: none;
-}
+html {scroll-behavior: smooth;}
 body {
   color: #161414;
   background-color: var(--bg-color);
@@ -43,26 +40,6 @@ a {text-decoration: none; color: #333;}
     display: block;
 }
 .container {width: 1400px; margin: 0 auto;}
-
-
-/* 마우스 커서 */
-.cursor_pointer {
-  position: absolute;
-  width: 48px; height: 48px;
-  top: 50%; left: 50%;
-  margin: -24px 0 0 -24px;
-  border: 2px solid var(--point-color);
-  border-radius: 100px;
-  backface-visibility: hidden;
-  transition: transform 0.3s ease-out;
-  z-index: 1000;
-  user-select:none;
-  pointer-events: none;
-}
-.cursor_pointer.is-moving {
-  transform: scale(1.5);
-}
-
 
 
 

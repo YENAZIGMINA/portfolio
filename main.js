@@ -34,30 +34,6 @@ document.querySelector('.close').addEventListener('click',function(e){
 
 
 
-//마우스커서
-var $cursor = $('.cursor_pointer');
-
-function moveCursor(e) {
-    $cursor.addClass('is-moving');
-
-	TweenLite.to($cursor, 0.23, {
-    left: e.pageX,
-    top: e.pageY,
-    ease: Power4.easOut
-});
-
-    clearTimeout(timer);
-
-    var timer = setTimeout(function() {
-        $cursor.removeClass('is-moving');
-    }, 300);
-}
-
-$(window).on('mousemove', moveCursor);
-
-
-
-
 
 //SVG 스퀘어
 $('.animate').scrolla({
