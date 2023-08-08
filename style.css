@@ -1923,9 +1923,54 @@ a {text-decoration: none; color: #333;}
   opacity: 1;
 }
 
+.bSlide.ballet .tablet_wrap {
+  position: absolute;
+  left: -151px; top: 144px;
+  width: 242px; height: 342px;
+  background: url(img/knb-renewal-tab.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+  border: 1px solid #ccc;
+  transform-style: preserve-3d;
+  transform: translateZ(-200px) scale(0.8);
+  opacity: 0;
+  transition: 2s 0.3s;
+  cursor: pointer;
+}
+.bSlide.ballet .tablet_wrap:hover {
+  background-position: bottom;
+}
+.bSlide.slick-active .tablet .tablet_wrap {
+  transform: translateZ(50px)  scale(1);
+  opacity: 1;
+}
+
+.bSlide.ballet .phone_wrap {
+  position: absolute;
+  right: -33px; bottom: 10px;
+  width: 123px; height: 230px;
+  background: url(img/knb-renewal-hp.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+  border: 1px solid #ccc;
+  transform-style: preserve-3d;
+  transform: translateZ(-200px) scale(0.8);
+  opacity: 0;
+  transition: 2s 0.3s;
+  cursor: pointer;
+}
+.bSlide.ballet .phone_wrap:hover {
+  background-position: bottom;
+}
+.bSlide.slick-active .phone .phone_wrap {
+  transform: translateZ(50px)  scale(1);
+  opacity: 1;
+}
+
+
 .ballet .reponsive_wrap .responsive {top: -18rem;}
-.ballet .reponsive_wrap .responsive .respon_tab {opacity: 0; pointer-events: none;}
-.ballet .reponsive_wrap .responsive .respon_ph {opacity: 0; pointer-events: none;}
+.ballet .reponsive_wrap .responsive .respon_tab {}
+.ballet .reponsive_wrap .responsive .respon_ph {}
 
 
 /* shshi */
@@ -2438,8 +2483,8 @@ a {text-decoration: none; color: #333;}
 }
 .web .progress .progress_btn {
   position: absolute;
-  top: -15rem; right: -15rem;
-  width: 235px; height: 53px;
+  top: -15rem; right: -14.5rem;
+  width: 174px; height: 53px;
   background-color: var(--main-color);
   border-radius: 15px;
   text-align: center;
